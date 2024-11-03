@@ -1,9 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
-  "globalDependencies": [
-    "**/.env.*local"
-  ],
   "tasks": {
     "build": {
       "dependsOn": [
@@ -29,21 +26,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "storybook": {
-      "dependsOn": [
-        "^build"
-      ],
-      "cache": false,
-      "persistent": true
-    },
-    "build-storybook": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "storybook-static/**"
-      ]
     }
   }
 }
