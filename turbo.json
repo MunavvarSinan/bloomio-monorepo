@@ -6,16 +6,24 @@
       "dependsOn": [
         "^build"
       ],
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        ".env*"
+      "outputs": []
+    },
+    "apps/web-user#build": {
+      "dependsOn": [
+        "^build"
       ],
       "outputs": [
-        "dist/**",
         ".next/**",
-        "public/**",
-        "storybook-static/**",
         "!.next/cache/**"
+      ]
+    },
+    "apps/mobile#build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "android/app/build/**",
+        "ios/build/**"
       ]
     },
     "lint": {
