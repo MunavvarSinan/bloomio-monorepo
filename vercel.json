@@ -2,15 +2,15 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/apps/web-user/$1"
+            "dest": "/web-user/$1"
         },
         {
             "src": "/docs/(.*)",
-            "dest": "/apps/docs/$1"
+            "dest": "/docs/$1"
         },
         {
             "src": "/web/(.*)",
-            "dest": "/apps/web/$1"
+            "dest": "/web/$1"
         }
     ]
 }
