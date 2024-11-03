@@ -14,10 +14,11 @@
         ".env*"
       ],
       "outputs": [
-        ".next/**",
-        "!.next/cache/**",
         "dist/**",
-        "storybook-static/**"
+        ".next/**",
+        "public/**",
+        "storybook-static/**",
+        "!.next/cache/**"
       ]
     },
     "lint": {
